@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>SPA con Tailwind</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col items-center">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md w-full p-4 flex justify-center gap-6">
+    <button onclick="navigate('home')" class="text-blue-600 hover:text-blue-800 font-medium">
+      Inicio
+    </button>
+    <button onclick="navigate('about')" class="text-blue-600 hover:text-blue-800 font-medium">
+      Acerca
+    </button>
+    <button onclick="navigate('contact')" class="text-blue-600 hover:text-blue-800 font-medium">
+      Contacto
+    </button>
+  </nav>
+
+  <!-- Contenido -->
+  <main class="flex-1 flex items-center justify-center w-full p-6">
+    <div
+      id="app"
+      class="bg-white rounded-xl shadow-lg p-8 w-full max-w-md text-center"
+    ></div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
